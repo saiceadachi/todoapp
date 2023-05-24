@@ -1,15 +1,20 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Todos</h1>
+<h1><%= t('.apptitle') %></h1>
 
 <div id="todos">
+  <table border>
+  <thead>
+  <th><%= t('.deadline') %></th>
+  <th><%= t('.title') %></th>
+  <th><%= t('.description') %></th>
+  </thead>
+  <tbody>
   <% @todos.each do |todo| %>
     <%= render todo %>
-    <p>
-    <%= link_to "Show this todo", todo %>
-    <%= link_to "Delete this todo", todo, method: :delete %>
-    </p>
   <% end %>
+  </tbody>
+  </table>
 </div>
 
-<%= link_to "New todo", new_todo_path %>
+<%= link_to t('.addtask'), new_todo_path %>

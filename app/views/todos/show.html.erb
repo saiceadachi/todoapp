@@ -1,10 +1,35 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @todo %>
+<dl>
+<dt>
+<%= t('.deadline') %>
+</dt>
+<dd>
+  <%= @todo.deadline %>
+</dd>
+</dl>
+
+<dl>
+<dt>
+<%= t('.title') %>
+</dt>
+<dd>
+  <%= @todo.title %>
+</dd>
+</dl>
+
+<dl>
+<dt>
+  <%= t('.description') %>
+</dt>
+<dd>
+  <%= @todo.decription %>
+</dd>
+</dl>
 
 <div>
-  <%= link_to "Edit this todo", edit_todo_path(@todo) %> |
-  <%= link_to "Back to todos", todos_path %>
+  <%= link_to t('.edit'), edit_todo_path(@todo) %> |
+  <%= link_to t('.backtolist'), todos_path %>
 
-  <%= button_to "Destroy this todo", @todo, method: :delete %>
+  <%= button_to t('.del'), @todo, method: :delete %>
 </div>
