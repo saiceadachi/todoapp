@@ -3,7 +3,13 @@ class TodosController < ApplicationController
 
   # GET /todos or /todos.json
   def index
-    @todos = Todo.all
+    if params[:order] && params[:order].casecmp("desc")==0
+      @todos = Todo.order(deadline: :desc).all
+      @order = "desc";
+    else
+      @todos = Todo.order(deadline: :asc).all
+      @order = "asc"
+    end
   end
 
   # GET /todos/1 or /todos/1.json

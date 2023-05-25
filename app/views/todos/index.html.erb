@@ -5,7 +5,7 @@
 <div id="todos">
   <table border>
   <thead>
-  <th><%= t('.deadline') %></th>
+  <th><%= t('.deadline') %><%= link_to ordermark(@order) , mark_click_path(@order) %></th>
   <th><%= t('.title') %></th>
   <th><%= t('.description') %></th>
   </thead>
