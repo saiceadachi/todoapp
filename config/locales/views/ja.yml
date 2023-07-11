@@ -1,0 +1,33 @@
+ja:
+  todos:
+    new:
+      newtodo: "タスクの追加"
+      backtolist: "タスク一覧に戻る"
+    index:
+      apptitle: "タスク一覧"
+      deadline: "期限"
+      title: "タイトル"
+      description: "詳細"
+      addtask: "タスクの追加"
+    todo:
+      deadline: "期限"
+      title: "タイトル"
+      description: "詳細"
+      show: "表示"
+      edit: "編集"
+      del: "削除"
+    todo2:
+      deadline: "期限"
+      title: "タイトル"
+      description: "詳細"
+    edit:      
+      pagetitle: "タスクの編集"
+      show: "表示"
+      backtolist: "タスク一覧に戻る"
+    show:
+      deadline: "期限"
+      title: "タイトル"
+      description: "詳細"
+      backtolist: "タスク一覧に戻る"
+      edit: "タスクの編集"
+      del: "タスクの削除"

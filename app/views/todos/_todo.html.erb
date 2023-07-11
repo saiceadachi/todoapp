@@ -1,17 +1,22 @@
-<div id="<%= dom_id todo %>">
-  <p>
-    <strong>DueDate:</strong>
-    <%= todo.deadline %>
-  </p>
+<tr id="<%= dom_id todo %>" style="border-bottom: 1px solid #DDD">
+  <td>
+    <%= l(todo.deadline, format: :long) %>
+  </td>
 
-  <p>
-    <strong>Title:</strong>
+  <td>
     <%= todo.title %>
-  </p>
+  </td>
 
-  <p>
-    <strong>Description:</strong>
+  <td>
     <%= todo.decription %>
-  </p>
-
-</div>
+  </td>
+  <td>
+  <%= link_to t('.show'), todo %>
+  </td>
+  <td>
+  <%= link_to t('.edit'), edit_todo_path(todo) %>
+  </td>
+  <td>
+  <%= link_to t('.del'), todo, method: :delete %>
+  </td>
+</tr>
