@@ -110,3 +110,8 @@ yarn-debug.log*
 
 #emace temporary
 *~
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
