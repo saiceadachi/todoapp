@@ -1,3 +1,4 @@
+# coding: utf-8
 require_relative "boot"
 
 require "rails/all"
@@ -21,6 +22,11 @@ module Todoapp
     config.time_zone = 'Tokyo'
     config.active_record.default_timezone = :local
 
+    # Hosts
+    config.hosts.clear
+    config.hosts << 'Testappadachi-env.eba-2wepcycx.ap-southeast-2.elasticbeanstalk.com'
+    config.hosts << '13.236.158.242'
+    config.hosts << 'localhost'
     #　以下の記述を追記する(設定必須)
     # デフォルトのlocaleを日本語(:ja)にする
     config.i18n.default_locale = :ja

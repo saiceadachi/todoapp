@@ -100,13 +100,3 @@ yarn-debug.log*
 /storage/*
 !/storage/.keep
 /public/uploads
-
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
-
-# environments
-.env*
-
-#emace temporary
-*~
